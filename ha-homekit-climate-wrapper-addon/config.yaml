@@ -1,0 +1,28 @@
+name: HomeKit Climate Wrapper
+version: "1.2.2"
+slug: ha_homekit_climate_wrapper
+description: Combine HA climate + switches into one HomeKit accessory
+startup: services
+boot: auto
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+map:
+  - data:rw
+options:
+  ha_url: "http://homeassistant:8123"
+  token: "Bearer Token"
+  climate: "climate.aircon"
+  name: "Air Conditioner"
+  poll_interval: 5000
+schema:
+  ha_url: str
+  token: str
+  climate: str
+  name: str
+  poll_interval: int
+ports:
+  51826/tcp: 51826
+host_network: true

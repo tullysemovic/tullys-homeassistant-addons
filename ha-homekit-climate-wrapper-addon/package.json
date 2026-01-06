@@ -1,0 +1,9 @@
+{
+  "name": "ha-homekit-climate-wrapper",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "hap-nodejs": "^0.11.1",
+    "node-fetch": "^3.3.2"
+  }
+}
