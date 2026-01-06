@@ -8,7 +8,6 @@ import {
   HAPStorage
 } from 'hap-nodejs';
 import fs from 'fs';
-import path from 'path';
 
 // ----------------------------
 // Persistent HomeKit storage
